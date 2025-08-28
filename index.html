@@ -7,6 +7,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <style>
+    h1 {
+  white-space: nowrap;       /* prevents wrapping */
+  font-size: clamp(1.2rem, 6vw, 2.2rem); /* auto resizes based on screen */
+}
+
     body {
       margin: 0;
       overflow-x: hidden;
@@ -97,9 +102,12 @@
 
   <!-- Content -->
   <div class="z-10 max-w-lg w-full">
-    <h1 class="text-3xl sm:text-5xl font-bold text-pink-600 mb-4 leading-tight text-center">
-      💖 Happy Birthday Lavanya 💖
-    </h1>
+    <h1 class="text-3xl sm:text-5xl font-bold text-pink-600 mb-4 leading-tight text-center flex items-center justify-center gap-2">
+  <span>💖</span>
+  <span>Happy Birthday Lavanya</span>
+  <span>💖</span>
+</h1>
+
 
     <p class="text-base sm:text-xl text-pink-700 mb-6 max-w-md mx-auto text-center">
       To someone who deserves all the smiles and joy today 🌸
